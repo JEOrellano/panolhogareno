@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3">
+
+            <Button
+                android:id="@+id/btn_aviso_card_btn_on_prestatario"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_row="0"
+                android:layout_column="0"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/success_color"
+                android:enabled="false"
+                android:text=":)"
+                android:textColor="@color/white_color"
+                android:textSize="8sp"
+                app:cornerRadius="25dp" />
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_gravity="center_vertical|start"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_titulo1_card_btn_on_prestatario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Nombre"
+                    android:textColor="@color/title_color" />
+
+                <TextView
+                    android:id="@+id/tv_subtitulo1_card_btn_on_prestatario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:text="Apellido"
+                    android:textColor="@color/text_color" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:layout_gravity="center_vertical|end"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/iv_delete_card_btn_on_prestatario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/gray_color"
+                    android:src="@drawable/ic_delete_outline_24_first_color" />
+
+                <ImageButton
+                    android:id="@+id/iv_edit_card_btn_on_prestatario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/gray_color"
+                    android:src="@drawable/ic_edit_24_first_color" />
+
+            </LinearLayout>
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_foto_card_btn_on_prestatario"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:contentDescription="Imagen prestatario"
+                app:srcCompat="@drawable/img_avatar_default" />
+
+            <TextView
+                android:id="@+id/tv_titulo2_card_btn_on_prestatario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp"
+                android:text="TITULO 2"
+                android:textColor="@color/title_color" />
+
+            <TextView
+                android:id="@+id/tv_subtitulo2_card_btn_on_prestatario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="4dp"
+                android:text="Subtitulo2"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:id="@+id/tv_comentario_card_btn_on_prestatario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginVertical="16dp"
+                android:text="Apellido Nombre nombreUsuario id: 7 dene 1 inventario 09/12/2024 18:16."
+                android:textColor="@color/gray_dark_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:gravity="center_vertical|start"
+                android:orientation="horizontal">
+
+                <ProgressBar
+                    android:id="@+id/pb_devolver_prestar_card_btn_on_prestatario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_devolver_card_btn_on_prestatario"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:backgroundTint="@color/transparent_color"
+                    android:text="Devolver"
+                    android:textColor="@color/first_color"
+                    android:textSize="12sp"
+                    app:cornerRadius="24dp" />
+
+                <Button
+                    android:id="@+id/btn_prestar_card_btn_on_prestatario"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/first_color"
+                    android:layout_marginStart="16dp"
+                    android:text="Prestar"
+                    android:textColor="@color/white_color"
+                    android:textSize="12sp"
+                    app:cornerRadius="24dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_frame_layout_prestatario"
+            android:layout_width="wrap_content"
+            android:layout_height="400dp"
+            android:layout_gravity="center_vertical|end"
+            android:alpha="0.75"
+            android:src="@drawable/img_delete_framelayout"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_frame_layout_prestatario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:rotation="-48"
+            android:text="Prestatario suspendido"
+            android:textSize="24sp"
+            android:textColor="@color/warning_color"
+            android:textStyle="italic|bold"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/ib_frame_layout_delete_prestatario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="24dp"
+            android:background="@color/transparent_color"
+            android:src="@drawable/ic_delete_forever_24_danger_color"
+            android:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/ib_frame_layout_restore_prestatario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="24dp"
+            android:background="@color/transparent_color"
+            android:src="@drawable/ic_restore_from_trash_24_success_color"
+            android:visibility="visible" />
+    </FrameLayout>
+
+</androidx.cardview.widget.CardView>

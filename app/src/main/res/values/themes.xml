@@ -1,0 +1,19 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Panolhogareno" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/first_alpha_color</item>
+        <item name="colorPrimaryVariant">@color/first_color</item>
+        <item name="colorOnPrimary">@color/white_color</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/second_alpha_color</item>
+        <item name="colorSecondaryVariant">@color/second_color</item>
+        <item name="colorOnSecondary">@color/black_color</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/third_color</item>
+        <!-- Customize your theme here. -->
+    </style>
+    <style name="MiEstiloDeToolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorControlNormal">@color/first_color</item>
+    </style>
+</resources>

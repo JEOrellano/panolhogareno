@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">Pañol Hogareño</string>
+    <!-- main Activity -->
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_logout">Logout</string>
+    <!-- splash Activity -->
+    <string name="autor">Desarrollado por @JEOrellano</string>
+    <string name="version_codigo">Version 1.0.0</string>
+    <!-- Login Activity -->
+    <string name="nombre_usuario">Nombre Usuario</string>
+    <string name="ingrese_nombre_usuario">Ingrese Nombre Usuario</string>
+    <string name="clave">Clave</string>
+    <string name="ingrese_clave">Ingrese Clave</string>
+    <string name="ingresar">Ingresar</string>
+    <!-- Opciones menu main 3 item default -->
+    <string name="opcion_1_menu_3_item">Opcion 1 menu 3 item</string>
+    <string name="opcion_2_menu_3_item">Opcion 2 menu 3 item</string>
+    <string name="opcion_3_menu_3_item">Opcion 3 menu 3 item</string>
+    <!-- Opciones menu main 3 item fragment home -->
+    <string name="opcion_1_menu_3_item_fhome">Buscar por Nombre</string>
+    <string name="opcion_2_menu_3_item_fhome">Buscar por Descripción</string>
+    <string name="opcion_3_menu_3_item_fhome">Buscar por Ubicación</string>
+    <!-- Opciones menu main 4 item default -->
+    <string name="opcion_1_menu_4_item">Opcion 1 menu 4 item</string>
+    <string name="opcion_2_menu_4_item">Opcion 2 menu 4 item</string>
+    <string name="opcion_3_menu_4_item">Opcion 3 menu 4 item</string>
+    <string name="opcion_4_menu_4_item">Opcion 4 menu 4 item</string>
+    <!-- Home Fragment -->
+    <string name="buscar_por_nombre">Buscar por nombre</string>
+    <string name="buscar_por_descripcion">Buscar por descripción</string>
+    <string name="buscar_por_ubicacion">1-DEPOSITO/2-PRESTADO</string>
+    <!-- Sheet Dialog Fragment Add Inventario -->
+    <string name="agregar_inventario">Agregar Inventario</string>
+    <string name="id">id:</string>
+    <string name="nombre">Nombre:</string>
+    <string name="ingrese_el_nombre">Ingrese el nombre</string>
+    <string name="descripcion">Descripcion:</string>
+    <string name="ingrese_la_descripcion">Ingrese la descripcion</string>
+    <string name="ubicacion">Ubicacion:</string>
+    <string name="estas_seguro_de_agregar_este_inventario">¿Estas seguro de agregar este inventario?</string>
+    <string name="si">Si</string>
+    <string name="inventario_agregado">Inventario agregado.</string>
+    <string name="confirmacion_cancelada">Confirmacion cancelada.</string>
+    <string name="no">No</string>
+    <string name="salir">Salir</string>
+    <string name="agregaci_n_cancelada">Agregación cancelada.</string>
+    <string name="ingrese_el_id">Ingrese el id</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="agregar">Agregar</string>
+    <string name="cancelado_devolver">Cancelado devolver.</string>
+    <!-- Sheet Dialog Fragment Lend Inventario -->
+    <string name="prestar_inventario">Prestar Inventario</string>
+    <string name="devolver_inventario">Devolver Inventario</string>
+    <string name="devolver">Devolver</string>
+    <string name="ingrese_nombre_de_usuario">Ingrese Nombre de Usuario</string>
+    <string name="prestamo_realizado">Prestamo realizado.</string>
+    <string name="devolucion_realizada">Devolucion realizada.</string>
+    <string name="salir_devolver">Salir devolver.</string>
+    <!-- Sheet Dialog Edit Inventario -->
+    <string name="editar_inventario">Editar Inventario</string>
+    <string name="inventario_editado">Inventario editado.</string>
+    <string name="estas_seguro_de_editar_este_inventario">¿Estas seguro de editar este inventario?</string>
+    <string name="salir_edici_n">Salir edición.</string>
+    <!-- Inventario adapter -->
+    <string name="suspender_inventario">Suspender Inventario</string>
+    <string name="eliminar_inventario">Eliminar Inventario</string>
+    <string name="restaurar_inventario">Restaurar Inventario</string>
+    <string name="inventario_suspendido">Inventario suspendido.</string>
+    <string name="error_al_suspender_el_inventario">Error al suspender el inventario.</string>
+    <string name="salir_suspender">Salir Suspender.</string>
+    <string name="eliminar_inventario_permanentemente">Eliminar inventario permanentemente</string>
+    <string name="error_al_eliminar_el_inventario">Error al eliminar el inventario.</string>
+    <string name="error_al_eliminar_el_inventario_y_sus_prestamos">Error al eliminar el inventario y sus prestamos.</string>
+    <string name="inventario_y_sus_prestamos_eliminado_permanentemente">Inventario y sus prestamos eliminado permanentemente.</string>
+    <string name="salir_elimicaci_n">Salir elimicación.</string>
+    <string name="imagen_guardada_en_la_galer_a">Imagen guardada en la galería</string>
+    <string name="imagen_eliminada">Imagen eliminada</string>
+    <string name="error_al_eliminar_la_imagen">Error al eliminar la imagen</string>
+    <string name="inventario_restaurado">Inventario restaurado.</string>
+    <string name="error_al_restaurar_el_inventario">Error al restaurar el inventario.</string>
+    <string name="restauraci_n_cancelada">Restauración cancelada.</string>
+    <string name="salir_restauraci_n">Salir restauración.</string>
+    <!-- Prestatario adapter -->
+    <string name="suspender_prestatario">Suspender Prestatario</string>
+    <string name="eliminar_prestatario">Eliminar Prestatario</string>
+    <string name="restaurar_prestatario">Restaurar Prestatario</string>
+    <string name="prestatario_suspendido">Prestatario suspendido.</string>
+    <string name="error_al_suspender_el_prestatario">Error al suspender el prestatario.</string>
+    <string name="eliminar_prestatario_permanentemente">Eliminar prestatario permanentemente</string>
+    <string name="eliminacion_cancelada">Eliminacion cancelada.</string>
+    <string name="prestatario_y_sus_prestamos_eliminado_permanentemente">Prestatario y sus prestamos eliminado permanentemente.</string>
+    <!-- Opciones menu main 3 item fragment dashboard -->
+    <string name="opcion_1_menu_3_item_fdashboard">Buscar por Nombre</string>
+    <string name="opcion_2_menu_3_item_fdashboard">Buscar por Apellido</string>
+    <string name="opcion_3_menu_3_item_fdashboard">Buscar por Nombre Usuario</string>
+    <!-- Sheet Dialog Fragment Add Prestatario -->
+    <string name="agregar_prestatario">Agregar Prestatario</string>
+    <string name="nombre_de_usuario">Nombre de Usuario</string>
+    <string name="ingrese_el_nombre_de_usuario">Ingrese el Nombre de Usuario</string>
+    <string name="apellido">Apellido</string>
+    <string name="ingrese_el_apellido">Ingrese el apellido</string>
+    <string name="rol">Rol</string>
+    <string name="estas_seguro_de_agregar_este_prestatario">¿Estas seguro de agregar este prestatario?</string>
+    <string name="prestatario_agregado">Prestatario agregado</string>
+    <string name="campo_requerido">Campo requerido *</string>
+    <string name="minimo_3_caracteres">Minimo 3 caracteres *</string>
+    <string name="nombre_usuario_existente">Nombre de usuario ya esta en uso *</string>
+    <string name="error_al_eliminar_prestatario_permanentemente">Error al eliminar el prestatario y sus prestamos.</string>
+    <string name="no_se_puede_eliminar_prestatario_permanentemente">No se puede eliminar prestatario permanentemente.</string>
+    <string name="editar">editar</string>
+    <string name="prestatario_eliminado_permanentemente">Prestatario eliminado permanenetmente.</string>
+    <!-- Sheet Dialog Edit Prestatario -->
+    <string name="editar_prestatario">Editar Prestatario</string>
+    <string name="seleccionar_opci_n">Seleccionar opción</string>
+    <string name="galer_a">Galería</string>
+    <string name="c_mara">Cámara</string>
+    <string name="restablecer_imagen">Restablecer Imagen</string>
+    <string name="est_s_seguro_de_que_deseas_reiniciar_esta_imagen">¿Estás seguro de que deseas reiniciar esta imagen?</string>
+    <string name="edici_n_cancelada">Edición Cancelada.</string>
+    <string name="estas_seguro_de_editar_este_prestatario">¿Estas seguro de editar este prestatario?</string>
+    <string name="prestatario_editado">Prestatario editado</string>
+    <!-- Sheet Dialog Fragment Lend Prestatario -->
+    <string name="ingrese_nombre">Ingrese nombre</string>
+    <string name="no_selecciono_inventario">No selecciono inventario.</string>
+    <string name="debe_seleccionar_un_inventario">Debe seleccionar un inventario.</string>
+    <string name="prestamo">Prestamo</string>
+    <!-- Opciones menu main 4 item fragment notifications -->
+    <string name="opcion_1_menu_4_item_fnotifications">yyyy-MM-dd Solicitud</string>
+    <string name="opcion_2_menu_4_item_fnotifications">yyyy-MM-dd Devolución</string>
+    <string name="opcion_3_menu_4_item_fnotifications">Buscar por ID Inventario</string>
+    <string name="opcion_4_menu_4_item_fnotifications">Buscar por ID Prestatario</string>
+    <!-- WhatsAppDialog -->
+    <string name="enviar_por_whatsapp">Enviar por WhatsApp</string>
+    <string name="enviar">Enviar</string>
+    <string name="por_favor_ingresa_un_n_mero_de_tel_fono">Por favor, ingresa un número de teléfono</string>
+    <string name="whatsapp_no_est_instalado">WhatsApp no está instalado</string>
+    <string name="n_mero_de_tel_fono">Número de teléfono</string>
+</resources>

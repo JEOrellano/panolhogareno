@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|start"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="@string/prestamo"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Fecha Devolución" />
+
+        <TextView
+            android:id="@+id/tv_date_devolucion_template_prestamo_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_calendar_month_24_first_day"
+            android:ems="12"
+            android:enabled="true"
+            android:gravity="center_vertical"
+            android:hint="Ingrese fecha devolución" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Hora Devolución" />
+
+        <TextView
+            android:id="@+id/tv_time_devolucion_template_prestamo_notifications"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/ic_access_time_24_first_color"
+            android:ems="12"
+            android:enabled="true"
+            android:hint="Ingrese hora devolución"
+            android:inputType="time" />
+
+        <ListView
+            android:id="@+id/lv_list_small_inventario_detail_prestamo_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"/>
+
+        <ListView
+            android:id="@+id/lv_list_small_prestatario_detail_prestamo_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/pb_avisar_devolver_prestamo_notifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_avisar_prestamo_notifications"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/transparent_color"
+                android:text="Avisar"
+                android:drawableLeft="@drawable/ic_error_outline_24"
+                android:textColor="@color/first_color"
+                android:textSize="12sp"
+                app:cornerRadius="24dp" />
+
+            <Button
+                android:id="@+id/btn_devolver_prestamo_notifications"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/first_color"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="16dp"
+                android:text="Devolver"
+                android:drawableEnd="@drawable/ic_archive_24_white_color"
+                android:textColor="@color/white_color"
+                android:textSize="12sp"
+                app:cornerRadius="24dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

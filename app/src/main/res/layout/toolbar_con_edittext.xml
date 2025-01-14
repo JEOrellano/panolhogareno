@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:layout_marginHorizontal="16dp"
+    android:background="@drawable/fondo_toolbar"
+    android:theme="@style/MiEstiloDeToolbar"
+    app:layout_constraintTop_toTopOf="parent"
+    app:navigationIcon="@drawable/ic_search_24"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    app:titleTextColor="@color/gray_dark_color">
+
+    <EditText
+        android:id="@+id/et_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Hint titulo"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textColor="@color/gray_dark_color"
+        android:textColorHint="@color/gray_dark_color" />
+
+    <Spinner
+        android:id="@+id/sp_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:popupBackground="@drawable/fondo_toolbar"
+        />
+
+</androidx.appcompat.widget.Toolbar>

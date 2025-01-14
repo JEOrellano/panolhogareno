@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="10dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_icono_card_dialog_add_inventario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="16dp"
+                    app:srcCompat="@drawable/ic_add_24_first_color" />
+
+                <TextView
+                    android:id="@+id/tv_titulo_card_dialog_add_inventario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/agregar_inventario"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/title_color"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:weightSum="3">
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_id_card_dialog_add_inventario"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="@string/id" />
+
+                    <EditText
+                        android:id="@+id/et_id_card_dialog_add_inventario"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:enabled="false"
+                        android:hint="@string/ingrese_el_id" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_nombre_card_dialog_add_inventario"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="@string/nombre" />
+
+                    <EditText
+                        android:id="@+id/et_nombre_card_dialog_add_inventario"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="@string/ingrese_el_nombre" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:id="@+id/tv_descripcion_card_dialog_add_inventario"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="@string/descripcion" />
+
+                    <EditText
+                        android:id="@+id/et_descripcion_card_dialog_add_inventario"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="@string/ingrese_la_descripcion" />
+
+                </TableRow>
+
+                <TableRow android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_ubicacion_card_dialog_add_inventario"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end"
+                        android:text="@string/ubicacion" />
+
+                    <Spinner
+                        android:id="@+id/sp_ubicacion_card_dialog_add_inventario"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2" />
+                </TableRow>
+
+            </TableLayout>
+
+            <ImageView
+                android:id="@+id/iv_foto_card_dialog_add_inventario"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                app:srcCompat="@drawable/img_item_default" />
+
+            <include
+                android:id="@+id/ll_card_dialog_add_inventario_sheet_dialog_lend_inventario"
+                layout="@layout/card_sheet_dialog_lend_inventario"
+                android:visibility="gone"/>
+            <!--<LinearLayout
+                android:id="@+id/ly_card_dialog_add_inventario_sheet_dialog_lend_inventario"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_icono_card_sheet_dialog_lend_inventario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="16dp"
+                        app:srcCompat="@drawable/ic_handshake_24_first_color" />
+
+                    <TextView
+                        android:id="@+id/tv_titulo_card_sheet_dialog_lend_inventario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="12"
+                        android:text="@string/prestar_inventario"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/title_color"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <Button
+                            android:id="@+id/btn_aviso_sheet_dialog_lend_inventario"
+                            android:layout_width="40dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="16dp"
+                            android:backgroundTint="@color/success_color"
+                            android:enabled="false"
+                            android:text=":)"
+                            android:textColor="@color/white_color"
+                            android:textSize="8sp"
+                            app:cornerRadius="25dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_nombre_iventario_sheet_dialog_lend_inventario"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="4dp"
+                            android:ems="10"
+                            android:text="Nombre"
+                            app:layout_constraintStart_toEndOf="@+id/btn_aviso_sheet_dialog_lend_inventario"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/tv_descripcion_inventario_sheet_dialog_lend_inventario"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginBottom="4dp"
+                            android:ems="10"
+                            android:text="Descripción"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/btn_aviso_sheet_dialog_lend_inventario"
+                            app:layout_constraintTop_toBottomOf="@+id/tv_nombre_iventario_sheet_dialog_lend_inventario"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/iv_inventario_sheet_dialog_lend_inventario"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginEnd="16dp"
+                            android:src="@drawable/img_item_default"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tv_label_nombre_usuario_sheet_dialog_lend_inventario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:labelFor="@+id/et_nombre_usuario_sheet_dialog_lend_inventario"
+                    android:text="Nombre Usuario" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageButton
+                        android:id="@+id/ibtn_buscar_sheet_dialog_lend_inventario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_search_24_first_color" />
+
+                    <EditText
+                        android:id="@+id/et_nombre_usuario_sheet_dialog_lend_inventario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:ems="10"
+                        android:hint="Ingrese Nombre Usuario"
+                        android:inputType="text" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_label_date_devolucion_sheet_dialog_lend_inventario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:labelFor="@+id/tv_date_devolucion_sheet_dialog_lend_inventario"
+                    android:text="Fecha Devolución" />
+
+                <TextView
+                    android:id="@+id/tv_date_devolucion_sheet_dialog_lend_inventario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/ic_calendar_month_24_first_day"
+                    android:ems="12"
+                    android:enabled="true"
+                    android:gravity="center_vertical"
+                    android:hint="Ingrese fecha devolución" />
+
+                <TextView
+                    android:id="@+id/tv_label_hora_devolucion_sheet_dialog_lend_inventario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:labelFor="@+id/tv_time_devolucion_sheet_dialog_lend_inventario"
+                    android:text="Hora Devolución" />
+
+                <TextView
+                    android:id="@+id/tv_time_devolucion_sheet_dialog_lend_inventario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:drawableLeft="@drawable/ic_access_time_24_first_color"
+                    android:ems="12"
+                    android:enabled="true"
+                    android:hint="Ingrese hora devolución"
+                    android:inputType="time" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="start|center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_cancelar1_card_sheet_dialog_lend_inventario"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="8dp"
+                        android:backgroundTint="@color/transparent_color"
+                        android:drawableLeft="@drawable/ic_close_24_success_color"
+                        android:text="Cancelar"
+                        android:textColor="@color/success_color"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        app:cornerRadius="25dp" />
+
+                    <Button
+                        android:id="@+id/id_btn_aceptar1_card_sheet_dialog_lend_inventario"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/danger_color"
+                        android:drawableLeft="@drawable/ic_edit_24_white_color"
+                        android:text="Accionar"
+                        android:textColor="@color/white_color"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        app:cornerRadius="25dp" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv_prestatario_sheet_dialog_lend_inventario"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="10dp" />
+
+            </LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="start|center_vertical"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cancelar_card_dialog_add_inventario"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:backgroundTint="@color/transparent_color"
+                    android:drawableLeft="@drawable/ic_close_24_success_color"
+                    android:text="@string/cancelar"
+                    android:textColor="@color/success_color"
+                    android:textSize="12sp"
+                    app:cornerRadius="25dp" />
+
+                <Button
+                    android:id="@+id/id_btn_editar_card_dialog_add_inventario"
+                    android:layout_width="140dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/danger_color"
+                    android:drawableLeft="@drawable/ic_add_24_white_color"
+                    android:text="@string/agregar"
+                    android:textColor="@color/white_color"
+                    android:textSize="12sp"
+                    app:cornerRadius="25dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>
