@@ -9,3 +9,6 @@ Pañol de herramientas para el hogar App Movil
 
 ## Documentacion Diagramas + Scripts MySQL y SQLite + Figma
 [Documentacion diagramas - scrips BD](https://github.com/JEOrellano/panolhogareno/wiki)
+
+## Video Promocion
+https://youtu.be/tw20yXwv8Z4?si=kK2m6VaO8yMOk4Ld
